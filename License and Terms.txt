@@ -1,0 +1,17 @@
+This project by AeroGenesis involves modifying the Laminar Research Airbus A330-300 files.
+
+The files included in this download are provided free of charge but remain under copyright protection. 
+You are permitted to download and use these files, but you are not allowed to share, modify, or distribute them in any form, claim credit for any part of these files or Reverse-engineer these files.
+
+You can create liveries, modify, and share textures as part of the livery, provided that you do not charge any money for them and you credit the original authors.
+
+If you are unsure, please use the provided contact information for inquiries.
+
+By installing and using any files included in this download, you acknowledge that the author is not responsible for any potential harm they may cause to you, others, your hardware, or software. All files are provided “as is.” Some contents of the folder are copyrighted by Laminar Research, who hold all rights to these files.
+
+
+Contact us via email
+aerogenesisdev@gmail.com
+
+Also, join our Discord server! You can report bugs there and see sneak peeks of our work before the official release.
+https://discord.gg/cyXrG4V4ZJ

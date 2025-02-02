@@ -1,0 +1,35 @@
+-------------------------------------------------
+	AeroGenesis A330 For X-Plane 12
+-------------------------------------------------
+
+Version 1.0.0
+- Added Laminar's updates
+- More realistic Cold&Dark State
+- Added some system depth (SelfTest, ADIRS align)
+- Added EFB
+- Refueling and Loading sequence via EFB
+- Visual improvements
+	1. Internal (cockpit)
+	2. External (engines)
+	3. General texture improvements
+- Added Chocks
+- Changed CG setting
+- Added screen popouts
+- Added PW4000 engine option
+- FMOD improvement:
+	1. Less outside noise in cockpit
+	2. Inside cockpit “sound area" is now bigger - reaches the front window
+	3. Improved sound of MCDU clicking
+	4. Better inside sounds during engine start
+	5. Added passenger safety announcements
+
+-------------------------------------------------
+
+Version 0.9.0
+- Fixed autopilot random disconnections on cruise
+- Corrected fuel burn
+- Upscaled cockpit textures
+- Improved turn prediction
+- Improved pfd colors
+
+-------------------------------------------------
