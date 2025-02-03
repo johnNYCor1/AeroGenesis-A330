@@ -1,2 +1,2 @@
-# AeroGenesis-A330-
-AeroGenesis Airbus A330 for X-Plane 12
+# AeroGenesis-A320
+AeroGenesis Airbus A320 for X-Plane 12
