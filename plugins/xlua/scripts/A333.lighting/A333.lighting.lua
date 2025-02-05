@@ -507,21 +507,17 @@ function A333_dome_lighting()
 	else right_dome_bat_ground_on = 0
 	end
 
-	if right_dome_bat_ground_on == 1 then
-		right_dome_on = 1
-	elseif right_dome_bat_ground_on == 0 then
-		if A333_dome_light_1_pos == 0 then
-			if A333_dome_light_2_pos == 0 then
-				right_dome_on = 0
-			elseif A333_dome_light_2_pos == 1 then
-				right_dome_on = 1
-			end
-		elseif A333_dome_light_1_pos == 1 then
-			if A333_dome_light_2_pos == 0 then
-				right_dome_on = 1
-			elseif A333_dome_light_2_pos == 1 then
-				right_dome_on = 0
-			end
+	if A333_dome_light_1_pos == 0 then
+		if A333_dome_light_2_pos == 0 then
+			right_dome_on = 0
+		elseif A333_dome_light_2_pos == 1 then
+			right_dome_on = 1
+		end
+	elseif A333_dome_light_1_pos == 1 then
+		if A333_dome_light_2_pos == 0 then
+			right_dome_on = 1
+		elseif A333_dome_light_2_pos == 1 then
+			right_dome_on = 0
 		end
 	end
 
