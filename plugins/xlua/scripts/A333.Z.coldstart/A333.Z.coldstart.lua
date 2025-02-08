@@ -1,3 +1,4 @@
+jit.off()
 --[[Thanks to https://github.com/telephono for letting us use his C&D mod
 ]]
 sim_startup_running  = find_dataref("sim/operation/prefs/startup_running")

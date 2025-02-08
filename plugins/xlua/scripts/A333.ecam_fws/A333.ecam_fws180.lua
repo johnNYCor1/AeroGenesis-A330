@@ -1,3 +1,4 @@
+jit.off()
 -- (c)2025 Luka Nöckel @quackderbruchpilot_ for AeroGenesis A330
 
 A333_ewd_msg.ADIRS_ALIGN = newEWDwarningMessage('ADIRS_ALIGN', 'NAV', 'NAV', 'ADIRS ALIGN', 1, 0, 0, 0, 1, 3, 1, 0, 1, 1010)
