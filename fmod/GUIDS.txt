@@ -179,6 +179,8 @@
 {b51f2cc5-9fb2-4274-81e0-fd4cea603d05} event:/AG_MCDU
 {351057c1-f999-4582-8109-7ce9d1d23b8d} event:/PW4000
 {cd89edf0-4a5d-486e-bc2c-3ef260ded057} event:/PW4000_Start
+{1dad55e4-3edc-4c1c-887b-4aeca28ad6ae} event:/GE_CF6
+{f8bdef35-b0bf-4755-8d1f-af68a16bb127} event:/GE_CF6_Start
 {08b937ac-410e-4c75-a30b-75952341730f} event:/Start_Inside
 {c8bfa8b4-31eb-4d76-a63f-f34c7e4fb8e3} event:/Safety
 {136703bc-9496-4bf5-a318-eeb092525a3e} parameter:/Distance
