@@ -1247,8 +1247,8 @@ A333_laminar_no_ref = create_dataref("laminar/no_ref", "number")
 
 
 -- Read initial values from PlaneMaker instead of hardcoding them... this fails on new flight start - we're writing to both of these targets in the script
-local LOW_IDLE_PLN_TARGET = 0.56
-local HIGH_IDLE_PLN_TARGET = 1.3
+local LOW_IDLE_PLN_TARGET = 0.45 --vinci:change value from 0.56 to work with my new engine model
+local HIGH_IDLE_PLN_TARGET = 1.62 --vinci:change value from 1.3 to work with my new engine model
 local STARTER_TORQUE_PLN_VALUE = simDR_starter_torque
 
 
@@ -4917,6 +4917,16 @@ function A333_ground_timer()
 
 end
 
+function A333_rev_timer() -- vinci: function for rev idle mode
+
+	if  simDR_engine1_reverse > 0.05 or simDR_engine2_reverse > 0.05 then
+	    rev_timer = rev_timer + SIM_PERIOD
+	else 
+		rev_timer = 0
+	end
+
+end
+
 function A333_idle_mode_logic()
 
 	local air_mode = 1
@@ -4928,9 +4938,8 @@ function A333_idle_mode_logic()
 		air_mode = 0
 	end
 
-
-	--- ENGINE GROUND / FLIGHT IDLE ---
-
+ if simDR_engine1_reverse < 0.5 and simDR_engine2_reverse < 0.5 then --vinci:add reverse idle
+	
 	if air_mode == 0 then
 		simDR_low_idle = LOW_IDLE_PLN_TARGET
 		simDR_high_idle = LOW_IDLE_PLN_TARGET
@@ -4938,10 +4947,19 @@ function A333_idle_mode_logic()
 		simDR_low_idle = HIGH_IDLE_PLN_TARGET
 		simDR_high_idle = HIGH_IDLE_PLN_TARGET
 	end
-
-
-
+ end
+  
+ if simDR_engine1_reverse >= 0.5 and simDR_engine2_reverse >= 0.5 then --vinci: rev idle mode for 10 sec if no addtion to rev power
+    if rev_timer < 7 then
+       simDR_low_idle = 2.0
+		simDR_high_idle = 2.0
+	elseif rev_timer >=7 then
+		simDR_low_idle = LOW_IDLE_PLN_TARGET
+		simDR_high_idle = LOW_IDLE_PLN_TARGET
+    end
+ end
 end
+
 
 
 
@@ -6321,6 +6339,7 @@ function A333_ALL_systems()
 	A333_fuel_totalizer_reset()
 	A333_vspeeds()
 	A333_ground_timer()
+	A333_rev_timer()--vinci: callback for rev timer function
 	A333_idle_mode_logic()
 	A333_sidestick_priority()
 
