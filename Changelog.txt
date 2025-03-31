@@ -2,6 +2,21 @@
 	AeroGenesis A330 For X-Plane 12
 -------------------------------------------------
 
+Version 1.1.0
+- Added UNIX support
+- Disable xLua Lua-JIT for better Performance
+- Fixed ANN LT too bright & Right DOME LT staying on
+- Fixed Ailerons not moving with Ground spoilers
+- Fixed moving with chocks on bug
+- Fixed ASU bug
+- Fixed EFB Lightning issue
+- Panel popouts now appear in a frame
+- Changed some Cockpit items
+- Added option to skip ADIRS align sequence
+
+
+-------------------------------------------------
+
 Version 1.0.0
 - Added Laminar's updates
 - More realistic Cold&Dark State
