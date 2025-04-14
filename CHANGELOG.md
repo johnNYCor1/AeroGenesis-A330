@@ -1,8 +1,11 @@
--------------------------------------------------
-	AeroGenesis A330 For X-Plane 12
--------------------------------------------------
+# AeroGenesis A330 For X-Plane 12
 
-Version 1.1.0
+## Version 1.1.1
+- Fixed build bundle for Windows platform
+
+---
+
+## Version 1.1.0
 - Added UNIX support
 - Disable xLua Lua-JIT for better Performance
 - Fixed ANN LT too bright & Right DOME LT staying on
@@ -13,11 +16,11 @@ Version 1.1.0
 - Panel popouts now appear in a frame
 - Changed some Cockpit items
 - Added option to skip ADIRS align sequence
+- Added new GPWS sounds (thanks to @sunm55 on Discord)
 
+---
 
--------------------------------------------------
-
-Version 1.0.0
+## Version 1.0.0
 - Added Laminar's updates
 - More realistic Cold&Dark State
 - Added some system depth (SelfTest, ADIRS align)
@@ -38,13 +41,11 @@ Version 1.0.0
 	4. Better inside sounds during engine start
 	5. Added passenger safety announcements
 
--------------------------------------------------
+---
 
-Version 0.9.0
+## Version 0.9.0
 - Fixed autopilot random disconnections on cruise
 - Corrected fuel burn
 - Upscaled cockpit textures
 - Improved turn prediction
 - Improved pfd colors
-
--------------------------------------------------
