@@ -8,19 +8,6 @@
 
 -- declaring variables
 size = {PFDcapt_width, PFDcapt_height}                          -- define component size
-
-ADIRS1_knob_position = globalProperty("laminar/A333/buttons/adirs/ir1_knob_pos")
-ADIRS_status = globalProperty("AG330/ADIRS/setToNAV")
-
-function update ()
-    if get(ADIRS1_knob_position) == 1 then
-        set(ADIRS_status, 1)
-    elseif get(ADIRS1_knob_position) == 0 then
-        set(ADIRS_status, 0)
-    end
-    --sasl.logDebug(ADIRS_status)
-end
-
 -----------------------------------------------------------------------------------------------------------------
 -- draw
 --
