@@ -1,5 +1,12 @@
 # AeroGenesis A330 For X-Plane 12
 
+## Version 1.1.2
+- Fixed ENG 2 won't start after ASU been turned on
+- Fixed ECAM ADIRS ALIGN MSG overlapping
+- Removed SelfTest debug messages
+
+---
+
 ## Version 1.1.1
 - Fixed build bundle for Windows platform
 
